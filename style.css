@@ -354,6 +354,7 @@ footer {
     border-left: none;
     color: #e8dfdf;
     padding: 10px;
+    background: rgb(17, 11, 11);
 }
 
 .footer-links a {
@@ -421,5 +422,32 @@ footer .footer-nav-links ul li a {
    #technologies .languages .card {
     width: 80vw;
    }
+}
+
+@media screen and (max-width: 384px) {
+    .home {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .home h1 {
+        font-size: 1.4rem;
+    }
+
+    .info {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .home .presentation {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .home img {
+        width: 85vw;
+        margin: 1rem auto 0;
+        display: block;
+    }
 }
 
