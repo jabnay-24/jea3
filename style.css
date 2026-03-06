@@ -209,6 +209,59 @@ section {
     color: #e8dfdf;
 }
 
+.discord-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    background: transparent;
+    color: #5865F2;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 2px solid #5865F2;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+    z-index: 1;
+    box-shadow: 0 0 10px #5865F2;
+}
+
+.discord-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #5865F2;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.discord-btn:hover {
+    color: #fff;
+    box-shadow: 0 0 25px #5865F2;
+    transform: translateY(-3px);
+}
+
+.discord-btn:hover::before {
+    left: 0;
+}
+
+.discord-btn i {
+    font-size: 18px;
+}
+
 hr {
     width: 50vw;
     margin: 0 auto;
@@ -354,7 +407,7 @@ footer {
     border-left: none;
     color: #e8dfdf;
     padding: 10px;
-    background: rgb(17, 11, 11);
+    background: #2a3342;
 }
 
 .footer-links a {
